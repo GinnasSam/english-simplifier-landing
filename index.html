@@ -460,8 +460,14 @@
 
     .providers-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 20px;
+    }
+
+    @media (min-width: 900px) {
+      .providers-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
     }
 
     .provider-card {
@@ -677,7 +683,7 @@
     </h1>
     <p class="hero-sub fade-up delay-2">
       AI 实时简化复杂英文 · 悬停查词卡 · 一键中文翻译<br>
-      <span>支持 OpenAI / Claude / DeepSeek / Kimi 等主流 AI</span>，自备 Key
+      <span>支持 OpenAI / Claude / DeepSeek / Kimi 等主流 AI</span>，自备 Key · 记录可导出
     </p>
     <div class="hero-btns fade-up delay-3">
       <a href="#cta"><button class="btn-primary">获取插件 →</button></a>
@@ -781,9 +787,9 @@
     <div class="feature-card fade-up delay-4">
       <div class="feature-icon">📊</div>
       <div>
-        <div class="feature-title-zh">学习记录</div>
-        <div class="feature-title-en">Learning History</div>
-        <p class="feature-desc">自动保存每一条简化记录，按来源网站筛选，随时复习你遇到过的难句。</p>
+        <div class="feature-title-zh">学习记录 &amp; 导出</div>
+        <div class="feature-title-en">Learning History &amp; Export</div>
+        <p class="feature-desc">自动保存每一条简化记录，按来源网站筛选复习难句。支持导出为 CSV、JSON、TXT、Markdown 四种格式，方便整理进 Anki 或笔记软件。</p>
       </div>
     </div>
   </div>
@@ -824,6 +830,15 @@
         <span class="tag">性价比高 Cost-efficient</span>
       </div>
       <p class="provider-desc">国内领先大模型，中英文理解能力强，适合追求高性价比的用户。</p>
+    </div>
+    <div class="provider-card fade-up delay-4">
+      <div class="provider-name">Kimi</div>
+      <div class="provider-model">moonshot-v1-8k</div>
+      <div class="provider-tags">
+        <span class="tag">国产</span>
+        <span class="tag">中英双强 Bilingual</span>
+      </div>
+      <p class="provider-desc">月之暗面出品，中英文双向理解能力出色，长文本处理表现稳定，国内用户友好。</p>
     </div>
   </div>
 </section>
